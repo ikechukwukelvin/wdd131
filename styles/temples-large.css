@@ -1,0 +1,30 @@
+/* Larger view styles */
+header {
+    flex-direction: row;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    padding: 10px 15px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer {
+    padding: 20px;
+}

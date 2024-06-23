@@ -1,0 +1,102 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+/* Resetting default browser styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting up fonts */
+body {
+    font-family: Roboto, sans-serif;
+}
+
+/* Styling header */
+header {
+    background-color: rgb(21, 66, 66);
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+nav { 
+    background-color: steelblue; 
+    padding: 10px; 
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+}
+
+/* Styling main */
+main {
+    padding: 20px;
+    display: flex;
+}
+
+.card {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    background-color: rgb(21, 66, 66);
+    color: #FFFFFF;
+    text-align: center;
+    display: grid;
+}
+
+img { 
+    width: 150px; 
+    height: auto; 
+    padding: 2px; 
+}
+
+/* Styling footer */
+footer {
+    background-color: rgb(21, 66, 66);
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+/* Styling copyright year */
+#currentyear {
+    font-weight: bold;
+}
+
+/* Styling last modified date */
+#lastModified {
+    font-style: italic;
+}
