@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Ikechukwu Kelvin</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Your full name. Keyword summary of page content.">
+    <meta name="author" content="Ikechukwu Kelvin">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <img srcset="nigeria-mobile.webp 320w,
+                         nigeria-tablet.webp 768w,
+                         nigeria-desktop.webp 1024w"
+                 sizes="(max-width: 320px) 320px,
+                        (max-width: 768px) 768px,
+                        1024px"
+                 src="nigeria-desktop.webp"
+                 alt="Nigeria">
+        </div>
+        <h1>Nigeria</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 923,769 sq km</li>
+                <li><strong>Population:</strong> 206,139,589</li>
+                <li><strong>Capital:</strong> Abuja</li>
+                <li><strong>Languages:</strong> English</li>
+                <li><strong>Currency:</strong> Nigerian Naira</li>
+                <li><strong>Time Zone:</strong> UTC+1</li>
+                <li><strong>Calling Code:</strong> +234</li>
+                <li><strong>Internet TLD:</strong> ng</li>
+            </ul>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <div class="weather-icon" aria-label="Sunny">
+                <!-- SVG weather icon for mobile view -->
+                <img src="images/weather_icon.svg" alt="Sunny">
+            </div>
+            <p>Temperature: <span class="temperature">28 °C</span></p>
+            <p>Conditions: Sunny</p>
+            <p>Wind: <span class="wind-speed">10 km/h</span></p>
+            <p>Wind Chill: <span class="windchill">N/A</span></p>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> 🌴Ikechukwu Kelvin Chichi 🌴 Delta, Nigeria
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
