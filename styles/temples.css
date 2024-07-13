@@ -1,0 +1,73 @@
+/* Mobile styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+body {
+    font-family: 'Roboto', sans-serif; /* Example Google Font */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none; /* Hide initially */
+}
+h2 {
+    font-size: 2rem;
+}
+nav ul li {
+    display: block;
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: underline double;
+}
+
+.active {
+    color: yellow;
+}
+main {
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: .5rem;
+}
+
+figure {
+    background-color: #fff;
+}
+
+figcaption {
+    font-size: smaller;
+}
+.stdlf {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
