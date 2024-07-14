@@ -100,3 +100,25 @@ footer p {
 #lastModified {
     font-style: italic;
 }
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: row;
+    }
+    
+    nav {
+        display: flex;
+        align-items: center;
+    }
+    .card {
+        flex-direction: column;
+        padding: 0;
+    }
+    main {
+        padding: 0.5em;
+    }
+    
+    footer {
+        margin-top: auto;
+    }
+}
