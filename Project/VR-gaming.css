@@ -1,0 +1,35 @@
+/* Basic styling using the selected color schema and typography */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 20px;
+}
+h1, h2, h3 {
+    color: #0066cc;
+}
+p {
+    color: #666;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+/* Additional styles can be added as needed */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #e68a00;
+}
