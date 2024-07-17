@@ -1,67 +1,51 @@
-// Product Array
+// Products array (provided)
 const products = [
     {
         id: 'fc-1888',
         name: 'flux capacitor',
-        averageRating: 4.5
+        avgRating: 4.5
     },
     {
         id: 'fc-2050',
         name: 'power laces',
-        averageRating: 4.7
+        avgRating: 4.7
     },
     {
         id: 'fs-1987',
         name: 'time circuits',
-        averageRating: 3.5
+        avgRating: 3.5
     },
     {
         id: 'ac-2000',
         name: 'low voltage reactor',
-        averageRating: 3.9
+        avgRating: 3.9
     },
     {
         id: 'jj-1969',
         name: 'warp equalizer',
-        averageRating: 5.0
+        avgRating: 5.0
     }
 ];
 
-// Function to populate product options
+// Function to populate product options in the select element
 function populateProductOptions() {
     const select = document.getElementById('productName');
     
     products.forEach(product => {
         const option = document.createElement('option');
-        option.textContent = product.name;
         option.value = product.name;
+        option.textContent = product.name;
         select.appendChild(option);
     });
 }
 
-// Function to validate form before submission
-function validateForm() {
-    const productName = document.getElementById('productName').value;
-    const rating = document.querySelector('input[name="rating"]:checked');
-    const installationDate = document.getElementById('installationDate').value;
-
-    if (!productName || !rating || !installationDate) {
-        alert('Please fill in all required fields.');
-        return false;
-    }
-
-    // Increment review counter using localStorage
-    let reviewCount = localStorage.getItem('reviewCount') || 0;
-    reviewCount++;
-    localStorage.setItem('reviewCount', reviewCount);
-    
-    return true;
+// Function to update review counter in localStorage
+function updateReviewCounter() {
+    let reviewsCount = localStorage.getItem('reviewsCount') || 0;
+    reviewsCount = parseInt(reviewsCount) + 1;
+    localStorage.setItem('reviewsCount', reviewsCount);
 }
 
-// Populate product options on page load
-window.onload = function() {
-    populateProductOptions();
-};
 // Function to get current year and set it in the span element
 function setCurrentYear() {
     const currentYear = new Date().getFullYear();
@@ -79,3 +63,8 @@ window.onload = function() {
     setCurrentYear();
     setLastModified();
 };
+
+
+// Event listener for form submission to update review count
+const form = document.querySelector('form');
+form.addEventListener('submit', updateReviewCounter);
