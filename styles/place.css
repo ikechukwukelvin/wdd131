@@ -1,12 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+:root {
+    --primary-color: #8d4675;
+    --secondary-color: #e7c24f;
+    --accent1-color: #4682b4;
+    --accent2-color: #aabd8c;
+    --heading-font: 'Times New Roman', serif;
+    --paragraph-font: 'Times New Roman', serif;
+    --nav-background-color: #D39377;
+    --nav-link-color: #348;
+    --nav-hover-link-color: #145C9E;
+    --nav-hover-background-color: #8d4121;
+  } 
 
-* {
-    box-sizing: border-box;
-}
-body, html {
+body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: var(--paragraph-font);
 }
 ::after {
     width: 100;
