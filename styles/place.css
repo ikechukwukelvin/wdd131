@@ -3,16 +3,15 @@
     --primary-color: #8d4675;
     --secondary-color: #830e0e;
     --paragraph-font: 'Times New Roman', serif;
-  } 
+} 
 
 body {
     margin: 0;
     padding: 0;
     font-family: var(--paragraph-font);
 }
-::after {
-    width: 100;
-    padding: 0%;
+h1::after {
+    content: url(smiley.gif);
 }
 /* Header styles */
 header {
