@@ -1,30 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 :root {
-    --main-color: #8d4675;
-    --pane-padding: 5px 42px;
-} 
+    --primary-color: #8d4675;
+    --secondary-color: #830e0e;
+    --paragraph-font: 'Times New Roman', serif;
+  } 
 
 body {
     margin: 0;
     padding: 0;
-    font-family: Roboto;
+    font-family: var(--paragraph-font);
+}
+::after {
+    width: 100;
+    padding: 0%;
 }
 /* Header styles */
 header {
-    background-color: #830e0e;
+    background-color: var(--primary-color);
     text-align: center;
     padding: 20px 0;
 }
-
 .hero img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-hi::after {
-    content: url(smiley.gif);
-}
 /* Main content styles */
 main {
     padding: 20px;
@@ -54,7 +55,7 @@ h2 {
 }
 /* Footer styles */
 footer {
-    background-color: #830e0e;
+    background-color: var(--secondary-color);
     color: white;
     text-align: center;
     padding: 20px 0;
