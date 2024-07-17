@@ -79,3 +79,6 @@ window.onload = function() {
     setCurrentYear();
     setLastModified();
 };
+ // Display review count from localStorage
+ const reviewCount = localStorage.getItem('reviewCount');
+ document.getElementById('reviewCount').textContent = reviewCount;

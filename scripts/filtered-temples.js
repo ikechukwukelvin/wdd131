@@ -87,14 +87,13 @@ const temples = [
 function createTempleCard(temple) {
     return `
         <figure>
-            
+            <img class="lazyload" src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
             <figcaption>
                 <p>${temple.templeName}</p>
                 <p>${temple.location}</p>
                 <p>Dedicated: ${temple.dedicated}</p>
                 <p>Area: ${temple.area} sq ft</p>
             </figcaption>
-            <img class="lazyload" src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
         </figure>
     `;
 }
