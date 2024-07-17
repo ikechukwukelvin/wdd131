@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Ikechukwu Kelvin</title>
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Your full name. Keyword summary of page content.">
+    <title>Place Page</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Ikechukwu Kelvin. Place page.">
     <meta name="author" content="Ikechukwu Kelvin">
     <link rel="stylesheet" href="styles/place.css">
-    <script src="scripts/place.js" defer></script>
+    <script src="scripts/place.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="hero">
-            <img srcset="Nigeria_Flag.jpg,
-                         nigeria-tablet.webp 768w,
-                         nigeria-desktop.webp 1024w"
-                 sizes="(max-width: 320px) 320px,
-                        (max-width: 768px) 768px,
-                        1024px"
-                 src="Nigeria_Flag.jpg."
-                 alt="Nigeria">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                <img src="images/hero-small.webp" alt="Flying Eagle" width="500" height="250">
+            </picture>
         </div>
         <h1>Nigeria</h1>
     </header>

@@ -3,6 +3,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 20px;
+    
   }
   
   header {
@@ -61,7 +62,7 @@ body {
   
   button {
     margin: 1rem;
-    background-color: brown;
+    background-color: rgb(17, 43, 40);
     color: #fff;
     border: none;
     border-radius: .5rem;

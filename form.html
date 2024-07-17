@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js"></script>
 </head>
+
 <body>
     <header>
         <h1>Product Review Form</h1>
@@ -16,19 +18,19 @@
     <main>
         <form id="reviewForm" method="get" action="review.html" onsubmit="return validateForm()">
             <fieldset>
-    
+
                 <!-- Product Name -->
                 <div class="form-group">
                     <label for="productName">Product Name:</label>
                     <select id="productName" name="productName" required>
                         <option value="" disabled selected>Select a Product ...</option>
-                          <option value="safari">Safari</option>
-                          <option value="background">background-color</option>
-                          <option value="brave">Brave</option>
-                          <option value="other">Other</option>
+                        <option value="safari">Safari</option>
+                        <option value="background">background-color</option>
+                        <option value="brave">Brave</option>
+                        <option value="other">Other</option>
                     </select>
                 </div>
-    
+
                 <!-- Overall Rating -->
                 <div class="form-group">
                     <label>Overall Rating:</label><br>
@@ -43,13 +45,13 @@
                     <input type="radio" id="rating5" name="rating" value="5">
                     <label for="rating5">☆☆☆☆☆</label>
                 </div>
-    
+
                 <!-- Date of Installation -->
                 <div class="form-group">
                     <label for="installationDate">Date of Installation:</label>
                     <input type="date" id="installationDate" name="installationDate" required>
                 </div>
-    
+
                 <!-- Useful Features -->
                 <div class="form-group">
                     <p><label>Which features did you find useful in the product?</label></p>
@@ -63,25 +65,24 @@
                     <input type="checkbox" id="feature4" name="Design" value="Design">
                     <p><label for="feature4">Design</label></p>
                 </div>
-    
+
                 <!-- Written Review -->
                 <div class="form-group">
                     <label for="writtenReview">Written Review:</label><br>
                     <textarea id="writtenReview" name="writtenReview" rows="4" cols="50"></textarea>
                 </div>
-    
+
                 <!-- User Name -->
                 <div class="form-group">
                     <label for="userName">Your Name:</label>
                     <input type="text" id="userName" name="userName">
                 </div>
-    
+
                 <!-- Submit Button -->
                 <P><button type="submit">Post Review</button></P>
             </fieldset>
         </form>
     </main>
-
     <footer>
         <p>
             &copy; <span id="currentyear"></span> 🌴Ikechukwu Kelvin Chichi 🌴 Delta, Nigeria

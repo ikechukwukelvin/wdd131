@@ -70,7 +70,7 @@ const temples = [
       dedicated: "1980, October, 27",
       area: 127500,
       imageUrl:
-        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/tokyo-japan/400x250/tokyo-japan-temple-lds-270404-wallpaper.jpg"
+        "https://www.churchofjesuschrist.org/temples/ldsorg/bc/Temples/details/tokyo-japan-temple?lang=eng"
     },
     {
       templeName: "São Paulo Brazil",
