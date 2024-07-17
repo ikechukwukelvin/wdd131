@@ -1,15 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 :root {
-    --primary-color: #8d4675;
-    --secondary-color: #e7c24f;
-    --accent1-color: #4682b4;
-    --accent2-color: #aabd8c;
-    --heading-font: 'Times New Roman', serif;
-    --paragraph-font: 'Times New Roman', serif;
-    --nav-background-color: #D39377;
-    --nav-link-color: #348;
-    --nav-hover-link-color: #145C9E;
-    --nav-hover-background-color: #8d4121;
+    --main-color: #8d4675;
+    --pane-padding: 5px 42px;
   } 
 
 body {
@@ -23,12 +15,16 @@ header {
     text-align: center;
     padding: 20px 0;
 }
+
 .hero img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+hi::after {
+    content: url(smiley.gif);
+}
 /* Main content styles */
 main {
     padding: 20px;
