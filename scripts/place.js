@@ -16,7 +16,6 @@ window.onload = function() {
     setLastModified();
 };
 
-
 // Function to calculate windchill factor
 function calculateWindChill(temperature, windSpeed, units) {
     if (units === 'metric') {
@@ -42,7 +41,3 @@ const units = 'metric'; // Example units (metric or imperial)
 // Calculate windchill and display in console
 const windchill = calculateWindChill(temperature, windSpeed, units);
 console.log('Windchill:', windchill);
-
-// Call functions to set current year and last modified date
-setCurrentYear();
-setLastModifiedDate();

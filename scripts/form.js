@@ -65,6 +65,4 @@ window.onload = function() {
 };
 
 
-// Event listener for form submission to update review count
-const form = document.querySelector('form');
-form.addEventListener('submit', updateReviewCounter);
+
