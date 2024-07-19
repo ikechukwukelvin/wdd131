@@ -14,7 +14,7 @@ body {
   }
   
   form {
-    max-width: 600px;
+
     margin: 0 auto;
     background: #756a6a8a;
     padding: 20px;
@@ -68,7 +68,7 @@ body {
     border-radius: .5rem;
     padding: .5rem;
     font-size: 1.2rem;
-    width: 650px;
+    width: 1000px;
 }
   footer {
     margin-top: 20px;
