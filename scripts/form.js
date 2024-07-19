@@ -1,42 +1,51 @@
+// Products array (provided)
 const products = [
     {
-      id: 'fc-1888',
-      name: "flux capacitor",
-      averagerating: 4.5
+        id: 'fc-1888',
+        name: 'flux capacitor',
+        avgRating: 4.5
     },
     {
-      id: 'fc-2050',
-      name: "power laces",
-      averagerating: 4.7
+        id: 'fc-2050',
+        name: 'power laces',
+        avgRating: 4.7
     },
     {
-      id: 'fs-1987',
-      name: "time circuits",
-      averagerating: 3.5
+        id: 'fs-1987',
+        name: 'time circuits',
+        avgRating: 3.5
     },
     {
-      id: 'ac-2000',
-      name: "low voltage reactor",
-      averagerating: 3.9
+        id: 'ac-2000',
+        name: 'low voltage reactor',
+        avgRating: 3.9
     },
     {
-      id: 'jj-1969',
-      name: "warp equalizer",
-      averagerating: 5.0
+        id: 'jj-1969',
+        name: 'warp equalizer',
+        avgRating: 5.0
     }
-  ];
+];
 
-document.addEventListener('DOMContentLoaded', function() {
-    const selectProduct = document.getElementById('productName');
+// Function to populate product options in the select element
+function populateProductOptions() {
+    const select = document.getElementById('productName');
     
-    // Populate product options
     products.forEach(product => {
-        let option = document.createElement('option');
+        const option = document.createElement('option');
         option.value = product.name;
         option.textContent = product.name;
-        selectProduct.appendChild(option);
+        select.appendChild(option);
     });
-});
+}
+
+// Function to update review counter in localStorage
+function updateReviewCounter() {
+    let reviewsCount = localStorage.getItem('reviewsCount') || 0;
+    reviewsCount = parseInt(reviewsCount) + 1;
+    localStorage.setItem('reviewsCount', reviewsCount);
+}
+
 // Function to get current year and set it in the span element
 function setCurrentYear() {
     const currentYear = new Date().getFullYear();
@@ -54,4 +63,6 @@ window.onload = function() {
     setCurrentYear();
     setLastModified();
 };
-  
+
+
+
