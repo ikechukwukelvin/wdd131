@@ -1,5 +1,3 @@
-// scripts/site.js
-
 // Example of DOM manipulation and event handling
 document.addEventListener('DOMContentLoaded', function() {
     const button = document.querySelector('button');
