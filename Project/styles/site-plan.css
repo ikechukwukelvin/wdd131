@@ -67,8 +67,8 @@ img {
 }
 
 footer {
-    background-color: var(--secondary-color);
-    color: black;
+    background-color: var(--primary-color);
+    color: white;
     text-align: center;
     padding: 10px;
 }
