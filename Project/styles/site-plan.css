@@ -11,7 +11,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background-color: white;
     color: #333;
 }
 
@@ -53,6 +53,10 @@ section {
 }
 
 h1, h2, h3 {
+    color: #0066cc;
+    text-align: center;
+}
+h4 {
     color: #0066cc;
 }
 

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan - Bay Area eBiking Club</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Ikechukwu Kelvin. Projrct siteplan.">
+    <meta name="author" content="Ikechukwu Kelvin">
+    <link rel="stylesheet" href="styles/site-plan.css">
+    <script src="scripts/siteplan.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.jpg" alt="Logo">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="index.html">About Us</a>
+          <a href="members.html">Event</a>
+          <a href="members.html">Membership</a>
+          <a href="gallery.html">Gallery</a>
+          <a class="current">Contact us</a>
+        </nav>
+    </header>
+    <main>
+      <h1>Contact Us</h1>
+      <h2>Send Us a message</h2>
+      <p>Bay Area eBiking Club</p>
+      <p>Phone: +2347033725224</p>
+      <p>Email: <a href="mailto:">chichi.ikechukwu@gmail.com</a></p>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d126927.17535702701!2d6.595112630814435!3d6.200997094686138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgoogle%20map!5e0!3m2!1sen!2sng!4v1707093160770!5m2!1sen!2sng" loading="lazy"></iframe>
+      </div>
+        <form>
+          <fieldset>
+            <legend>Contact Information</legend>
+               <div class="form-item column2">
+                  <label for="fullname">Full Name:</label>
+                  <input type="text" id="fullname" name="fullanme">
+               </div>
+               <div class="form-item column2">
+                  <label for="useremail">Email:</label>
+                  <input type="email" id="useremail" name="useremail">
+               </div>
+          </fieldset>
+          <fieldset>
+            <legend>Please select your preferred contact method:</legend>
+               <div>
+                  <input type="radio" id="contactChoice1" name="contact" value="email" />
+                  <label for="contactChoice1">Email</label>
+            
+                  <input type="radio" id="contactChoice2" name="contact" value="phone" />
+                  <label for="contactChoice2">Phone</label>
+            
+                  <input type="radio" id="contactChoice3" name="contact" value="mail" />
+                  <label for="contactChoice3">Mail</label>
+                </div>
+            <label for="story">Tell us your story:</label>
+            <textarea id="story" name="story" rows="5" cols="33">It was a dark and stormy night..</textarea>
+            <label for="inquiry">What is your purpose of visiting?</label>
+            <select id="inquiry" name="inquiry">
+              <option value="pick one option">pick one option</option>
+              <option value="general inquiry">General Inquiry</option>
+              <option value="reservation question">Reservation Question</option>
+              <option value="website suggestion">Website Suggestion</option>
+            </select>
+            <label for="number">Please subscribe me to the monthly newsletter</label>
+            <input type="checkbox" id="number" name="unmber">
+            <button type="submit">Submission</button>
+        </fieldset>
+      </form>   
+    </main>
+    <footer>
+      <nav class="sociallinks">
+          <a href="https://facebook.com">
+              <img src="images/facebook.png" alt="Facebook">
+          </a>
+          <a href="https://twitter.com">
+              <img src="images/twitter.png" alt="Twitter">
+          </a>
+          <a href="https://instagram.com">
+              <img src="images/instagram.png" alt="Instagram">
+          </a>
+      </nav>  
+      <p>
+          &copy; <span id="currentyear"></span> 🌴Ikechukwu Kelvin Chichi 🌴 Delta, Nigeria
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+  </body> 
+</html>
